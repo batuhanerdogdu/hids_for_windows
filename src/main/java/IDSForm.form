@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="IDSForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="15" y="27" width="1040" height="712"/>
+    </constraints>
+    <properties>
+      <background color="-13224394"/>
+      <preferredSize width="1000" height="500"/>
+    </properties>
+    <border type="bevel-raised">
+      <title-color color="-4473925"/>
+    </border>
+    <children>
+      <tabbedpane id="6140d" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="952" height="430"/>
+            <preferred-size width="952" height="462"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <foreground color="-12513770"/>
+        </properties>
+        <border type="etched"/>
+        <children>
+          <grid id="5b0cb" binding="malwareScanPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Malware Scan"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2f60" class="javax.swing.JLabel" binding="processLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="296" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Processes"/>
+                </properties>
+              </component>
+              <component id="d01a4" class="javax.swing.JLabel" binding="serviceLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="209" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Services"/>
+                </properties>
+              </component>
+              <component id="6ece1" class="javax.swing.JLabel" binding="malwareLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Malware List"/>
+                </properties>
+              </component>
+              <component id="a18af" class="javax.swing.JButton" binding="addMalwareToServicesButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="209" height="49"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <foreground color="-4501952"/>
+                  <text value="Add Malware To Services"/>
+                </properties>
+              </component>
+              <component id="da312" class="javax.swing.JButton" binding="addMalwareToProcessesButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="199" height="49"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <foreground color="-4501952"/>
+                  <text value="Add Malware &#10;To Processes"/>
+                </properties>
+              </component>
+              <component id="b2cab" class="javax.swing.JButton" binding="scanMalwaresButton" default-binding="true">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="296" height="49"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Scan Malwares"/>
+                </properties>
+              </component>
+              <scrollpane id="3aa6c">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <autoscrolls value="true"/>
+                  <background color="-12828863"/>
+                  <verticalScrollBarPolicy value="20"/>
+                  <wheelScrollingEnabled value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e5e14" class="javax.swing.JTextArea" binding="processTextArea">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="6ada4">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="66d9a" class="javax.swing.JTextArea" binding="serviceTextArea">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="3c958">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="52714" class="javax.swing.JTextArea" binding="malwareTextArea">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="45845" binding="liveNetworkScanPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Live Network Scan"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fc457" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Network Packets"/>
+                </properties>
+              </component>
+              <component id="8ea3e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Signatured Payloads"/>
+                </properties>
+              </component>
+              <scrollpane id="8e5a7">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="be4c7" class="javax.swing.JTextArea" binding="networkPacketsTextArea">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="8e9c5">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="b160c" class="javax.swing.JTextArea" binding="sigPacketsTextArea">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="d5321" class="javax.swing.JButton" binding="scanNetworkPacketsButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Scan Network Packets"/>
+                </properties>
+              </component>
+              <component id="ddd61" class="javax.swing.JButton" binding="stopScanningButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Stop Scanning"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
