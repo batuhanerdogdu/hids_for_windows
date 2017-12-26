@@ -21,9 +21,11 @@ public class SendCommands {//uses osquery to fetch running processes and service
         String line;
         ArrayList<String> processes = new ArrayList<String>();
         while ((line = r.readLine()) != null) {
-            if (!line.contains("-----") && !line.contains("+--") && !line.contains("name"))
-                processes.add(line.substring(1, 31).trim().replace(".exe", ""));
+            if (!line.contains("-----") && !line.contains("+--") && !line.contains("name")){
+
+;               processes.add(line.substring(1, 31).trim().replace(".exe", "").replace(' ', '_'));
             //System.out.println(line.substring(1,31).trim());
+            }
         }
         return processes;
     }
@@ -39,9 +41,10 @@ public class SendCommands {//uses osquery to fetch running processes and service
         String line;
         ArrayList<String> services = new ArrayList<String>();
         while ((line = r.readLine()) != null) {
-            if (!line.contains("-----") && !line.contains("+--") && !line.contains("name"))
-                services.add(line.substring(1, 31).trim());
-            //System.out.println(line.substring(1,31).trim());
+            if (!line.contains("-----") && !line.contains("+--") && !line.contains("name")) {
+                services.add(line.substring(1, 31).trim().replace(' ', '_'));
+                //System.out.println(line.substring(1,31).trim());
+            }
         }
         return services;
 

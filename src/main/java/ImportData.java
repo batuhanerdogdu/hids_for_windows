@@ -60,7 +60,7 @@ public class ImportData {
             String[] splitData = dataCSV.split("\\s*,\\s*");
             for(int i=0; i<splitData.length;i++){
                 if(!(splitData[i]==null) || !(splitData[i].length() == 0)){
-                    dataResult.add(splitData[i].trim());
+                    dataResult.add(splitData[i].trim().replace(' ', '_').replace('"', '_'));
                 }
             }
         }
